@@ -59,7 +59,7 @@ if(databaseInfo.database.host  === "" || databaseInfo.database.user  === "" || d
     process.exit()
 }
 
-if(databaseInfo.database.databaseName !== "CPOasis") { // put database name here
+if(databaseInfo.database.databaseName !== "clubpenguin") { // put database name here
     console.log('[Warning] Invalid database name server will now close')
     process.exit()
 }
