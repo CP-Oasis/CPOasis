@@ -19,6 +19,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+
 - name: npm/yarn/pnpm install
   # You may pin to the exact commit or the version.
   # uses: Jaid/action-npm-install@9483da054882538350947c4147de4c8adbf0d597
@@ -30,7 +31,8 @@ jobs:
     packageManager: # optional, default is auto
     # If true and node_modules folder already exists, this action will be skipped assuming npm install is not required.
     skipIfNodeModulesExists: # optional, default is false
-    - name: npm install, build, and test
+   
+   - name: npm install, build, and test
       run: |
         npm install
         npm run build --if-present
